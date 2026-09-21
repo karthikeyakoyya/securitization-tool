@@ -1,0 +1,67 @@
+{
+  "deals": [
+    {
+      "deal_label": "VW Auto Lease Trust 2025-B (ABS)",
+      "source_document": "vw_alt_2025b_424b5_excerpt.txt",
+      "field_level_accuracy_pct": 90.3,
+      "fields_scored": 31,
+      "fields_correct": 28,
+      "procedures": [
+        {
+          "procedure": "Abstracted tranche terms, payment dates, servicer/trustee, and collateral description from VW Auto Lease Trust 2025-B (ABS) (vw_alt_2025b_424b5_excerpt.txt) and compared each field to independently, manually verified values from the source filing.",
+          "result_summary": "28 of 31 fields (90.3%) agreed with the manually verified values. 3 exception(s) noted below.",
+          "exceptions": [
+            "deal_name_series: extracted 'None' vs. stated 'VALET 2025-B'",
+            "trustee_name: extracted 'Citibank, N.A.' vs. stated 'Citibank, N.A. (Indenture Trustee)'",
+            "collateral_type: extracted 'Retail closed-end automobile leases (Volkswagen and Audi vehicles)' vs. stated 'Retail closed-end automobile leases (VW/Audi)'"
+          ]
+        },
+        {
+          "procedure": "Recomputed the sequential-pay cash flow waterfall for VW Auto Lease Trust 2025-B (ABS) under illustrative scenario assumptions (15% CPR, 0% annual default rate, 5.5% collateral WAC, 48-month term -- chosen for this exercise, not figures stated in the offering document) and recalculated declining balance, weighted average life (WAL), and approximate pre-tax yield to maturity for each class.",
+          "result_summary": "Class A-1: WAL 0.23 yrs, approx. pre-tax YTM 0.0424; Class A-2-A: WAL 0.98 yrs, approx. pre-tax YTM 0.0404; Class A-2-B: WAL 0.98 yrs, approx. pre-tax YTM 0.0443; Class A-3: WAL 2.21 yrs, approx. pre-tax YTM 0.0408; Class A-4: WAL 2.98 yrs, approx. pre-tax YTM 0.0004",
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "deal_label": "Benchmark 2024-V7 (CMBS)",
+      "source_document": "benchmark_2024_v7_424b2_excerpt.txt",
+      "field_level_accuracy_pct": 71.0,
+      "fields_scored": 31,
+      "fields_correct": 22,
+      "procedures": [
+        {
+          "procedure": "Abstracted tranche terms, payment dates, servicer/trustee, and collateral description from Benchmark 2024-V7 (CMBS) (benchmark_2024_v7_424b2_excerpt.txt) and compared each field to independently, manually verified values from the source filing.",
+          "result_summary": "22 of 31 fields (71.0%) agreed with the manually verified values. 9 exception(s) noted below.",
+          "exceptions": [
+            "deal_name_series: extracted 'None' vs. stated 'Benchmark 2024-V7'",
+            "trustee_name: extracted 'Computershare Trust Company, National Association.' vs. stated 'Computershare Trust Company, National Association'",
+            "collateral_type: extracted 'Fixed rate commercial mortgage loans secured by first liens on commercial and' vs. stated 'Fixed rate commercial mortgage loans secured by first liens on commercial and multifamily properties'",
+            "Class A-3 coupon_type: extracted 'fixed' vs. stated 'floating'",
+            "Class A-3 coupon_rate: extracted 'None' vs. stated '0.0622757'",
+            "Class A-S coupon_type: extracted 'fixed' vs. stated 'floating'",
+            "Class A-S coupon_rate: extracted 'None' vs. stated '0.0653304'",
+            "Class B coupon_type: extracted 'fixed' vs. stated 'floating'",
+            "Class B coupon_rate: extracted 'None' vs. stated '0.0707994'"
+          ]
+        },
+        {
+          "procedure": "Recomputed the sequential-pay cash flow waterfall for Benchmark 2024-V7 (CMBS) under illustrative scenario assumptions (8% CPR, 1% annual default rate, 6.2% collateral WAC, 60-month term -- chosen for this exercise, not figures stated in the offering document) and recalculated declining balance, weighted average life (WAL), and approximate pre-tax yield to maturity for each class.",
+          "result_summary": "Class A-1: WAL 0.08 yrs, approx. pre-tax YTM 0.0578; Class A-2: WAL 0.15 yrs, approx. pre-tax YTM 0.0593; Class A-3: WAL 1.80 yrs, approx. pre-tax YTM 0.0641; Class A-S: WAL 3.66 yrs, approx. pre-tax YTM 0.0673; Class B: WAL 4.00 yrs, approx. pre-tax YTM -0.0186",
+          "exceptions": [
+            "Class B: computed approx. pre-tax YTM is negative (-0.0186) under the stated scenario assumptions -- consistent with this class receiving interest but minimal principal within the 60-month term at this deal's subordination level; not a computation error, flagged for reviewer awareness."
+          ]
+        },
+        {
+          "procedure": "Ran the 20% pool-concentration test (the same test implemented in the project's StratificationQA.bas VBA macro) against an ILLUSTRATIVE, SYNTHETIC property-type mix for Benchmark 2024-V7 (CMBS) -- not the deal's actual collateral tape. The real loan-level collateral tape for a CMBS deal is a separate, large data file that is not included in the prospectus summary excerpt used elsewhere in this work paper and was not independently sourced for this exercise. This procedure demonstrates the concentration-test mechanics on realistic-shaped synthetic data; it is not a finding about this specific deal's actual property-type concentration and must not be read or cited as one.",
+          "result_summary": "(synthetic data) Multifamily: 36.50% ($300,000,000) [HIGH]; Office: 30.42% ($250,000,000) [HIGH]; Industrial: 21.90% ($180,000,000) [HIGH]; Retail: 11.18% ($91,890,000) [MED]",
+          "exceptions": [
+            "Multifamily bucket at 36.50% of pool exceeds the 20% concentration threshold.",
+            "Office bucket at 30.42% of pool exceeds the 20% concentration threshold.",
+            "Industrial bucket at 21.90% of pool exceeds the 20% concentration threshold."
+          ]
+        }
+      ]
+    }
+  ]
+}

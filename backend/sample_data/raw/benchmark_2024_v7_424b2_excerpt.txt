@@ -1,0 +1,80 @@
+SOURCE: SEC EDGAR, Form 424B2
+Filer: Citigroup Commercial Mortgage Securities Inc. (CIK 0001258361); Issuing Entity CIK 0002016841
+URL: https://www.sec.gov/Archives/edgar/data/1258361/000153949724001104/n4255_x13-424b2.htm
+Filed: 2024-05-24
+NOTE: This is a manually-trimmed excerpt (Certificate Summary + Summary of Terms sections) of a
+real, public SEC filing, saved for offline development/testing of the extraction pipeline. Full
+filing should be re-downloaded from the URL above for production use -- do not redistribute large
+verbatim excerpts of third-party filings beyond what is needed for local testing. Trustee/servicer
+names cross-checked against the deal's Pooling and Servicing Agreement (Exhibit 4.1 to Form 8-K/A
+filed 2024-05-30, CIK 0002016841).
+
+=== SUMMARY OF TERMS ===
+
+Title of Certificates: Benchmark 2024-V7 Mortgage Trust, Commercial Mortgage Pass-Through
+Certificates, Series 2024-V7.
+
+Issuing Entity/Trust: Benchmark 2024-V7 Mortgage Trust, a New York common law trust.
+
+Depositor: Citigroup Commercial Mortgage Securities Inc., a Delaware corporation.
+
+Master Servicer: Midland Loan Services, a Division of PNC Bank, National Association.
+Special Servicer: K-Star Asset Management LLC.
+Certificate Administrator: Computershare Trust Company, National Association.
+Trustee: Computershare Trust Company, National Association.
+Operating Advisor / Asset Representations Reviewer: Park Bridge Lender Services LLC.
+
+Closing Date: on or about May 30, 2024
+First Payment Date: June 2024, 4th business day following the 11th day of each month
+Payment Dates: 4th business day following the 11th day of each month (or next business day)
+Rated Final Distribution Date: May 2056
+
+Collateral Type: Fixed rate commercial mortgage loans secured by first liens on commercial and
+multifamily properties
+Aggregate securitization value (cutoff date): $821,890,000.00
+
+THE OFFERED CERTIFICATES:
+
+Class of Certificates | Certificate Balance | Interest Rate    | Rate Type
+Class A-1             | $1,650,000          | 5.62741% (fixed) | Fixed
+Class A-2             | $33,000,000         | 5.77222% (fixed) | Fixed
+Class A-3             | $533,784,000        | 6.22757%         | WAC Cap
+Class A-S             | $86,280,000         | 6.53304%         | WAC Cap
+Class B               | $40,602,000         | 7.07994%         | WAC
+
+Note: Class X-A (interest-only, notional $568,434,000, 0.88054%) is a non-principal-balance
+strip class and is out of scope for this extractor (principal-balance classes only).
+
+Credit Support (approximate, subordination-based, per Certificate Summary):
+- Class A-1 / Class A-2 / Class A-3: 30.000%
+- Class A-S: 19.375%
+- Class B: 14.375%
+
+Expected Weighted Average Life (per Certificate Summary):
+- Class A-1: 3.30 years
+- Class A-2: 4.64 years
+- Class A-3: 4.89 years
+- Class A-S: 4.96 years
+- Class B: 4.96 years
+
+Principal Payment Priority (sequential, senior to subordinate, prior to a control termination
+or other trigger event):
+  1. Class A-1, Class A-2, Class A-3 (pro rata among themselves), until paid in full
+  2. Class A-S, until paid in full
+  3. Class B, until paid in full
+
+Ratings: Determined by the hired NRSROs as of the closing date; specific per-class rating levels
+are not stated in this summary-of-terms excerpt -- flag this field as LOW CONFIDENCE / needs
+manual lookup in the Ratings section of the full prospectus.
+
+Key Triggers/Covenants (from Priority of Distributions, summarized):
+- Control Termination Event: shifts control rights away from the most subordinate outstanding
+  class once its certificate balance (net of Appraisal Reduction Amounts) falls below 25% of its
+  initial balance.
+- Collateral Deficiency Amount allocation: realized losses on the mortgage pool are allocated in
+  reverse order of seniority, starting with the most subordinate class of principal-balance
+  certificates.
+- Servicer Termination Event provisions govern replacement of the Master Servicer or Special
+  Servicer for failure to perform under the Pooling and Servicing Agreement.
+
+=== END OF EXCERPT ===

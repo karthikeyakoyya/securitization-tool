@@ -1,0 +1,83 @@
+{
+  "source_document": "vw_alt_2025b_424b5_excerpt.txt",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1182534/000141057825002125/tm2524548d14_424b5.htm",
+  "issuer_trust_name": "Volkswagen Auto Lease Trust 2025-B",
+  "deal_name_series": "VALET 2025-B",
+  "closing_date": "2025-09-16",
+  "payment_frequency": "monthly",
+  "payment_day_of_month": 20,
+  "first_payment_date": "2025-10-20",
+  "servicer_name": "VW Credit, Inc.",
+  "trustee_name": "Citibank, N.A. (Indenture Trustee)",
+  "collateral_type": "Retail closed-end automobile leases (VW/Audi)",
+  "aggregate_pool_balance_at_cutoff": 1749271144.90,
+  "cutoff_date": "2025-07-31",
+  "tranches": [
+    {
+      "class_name": "Class A-1",
+      "seniority_rank": 1,
+      "initial_principal_balance": 212600000,
+      "coupon_type": "fixed",
+      "coupon_rate": 0.04164,
+      "reference_rate": null,
+      "spread": null,
+      "final_scheduled_payment_date": "2026-09-21",
+      "credit_rating": "not stated in excerpt - LOW CONFIDENCE, needs manual lookup"
+    },
+    {
+      "class_name": "Class A-2-A",
+      "seniority_rank": 2,
+      "initial_principal_balance": 305000000,
+      "coupon_type": "fixed",
+      "coupon_rate": 0.0397,
+      "reference_rate": null,
+      "spread": null,
+      "final_scheduled_payment_date": "2028-04-20",
+      "credit_rating": "not stated in excerpt - LOW CONFIDENCE, needs manual lookup"
+    },
+    {
+      "class_name": "Class A-2-B",
+      "seniority_rank": 2,
+      "initial_principal_balance": 292000000,
+      "coupon_type": "floating",
+      "coupon_rate": null,
+      "reference_rate": "SOFR",
+      "spread": 0.0037,
+      "final_scheduled_payment_date": "2028-04-20",
+      "credit_rating": "not stated in excerpt - LOW CONFIDENCE, needs manual lookup"
+    },
+    {
+      "class_name": "Class A-3",
+      "seniority_rank": 3,
+      "initial_principal_balance": 597000000,
+      "coupon_type": "fixed",
+      "coupon_rate": 0.0401,
+      "reference_rate": null,
+      "spread": null,
+      "final_scheduled_payment_date": "2029-01-22",
+      "credit_rating": "not stated in excerpt - LOW CONFIDENCE, needs manual lookup"
+    },
+    {
+      "class_name": "Class A-4",
+      "seniority_rank": 4,
+      "initial_principal_balance": 93400000,
+      "coupon_type": "fixed",
+      "coupon_rate": 0.04,
+      "reference_rate": null,
+      "spread": null,
+      "final_scheduled_payment_date": "2030-05-20",
+      "credit_rating": "not stated in excerpt - LOW CONFIDENCE, needs manual lookup"
+    }
+  ],
+  "credit_enhancement": {
+    "reserve_account_pct_of_initial_pool": 0.0025,
+    "initial_overcollateralization_amount": 249271144.90,
+    "initial_overcollateralization_pct": 0.1425
+  },
+  "key_covenants_triggers": [
+    "First priority principal distribution amount (undercollateralization trigger vs. prior note balance)",
+    "Regular principal distribution amount (targeted overcollateralization maintenance)",
+    "Reserve account funded/replenished to targeted reserve account balance before residual distributions"
+  ],
+  "notes_on_manual_verification": "Filled in by hand from the SEC EDGAR filing text on 2026-09-10 to serve as ground truth for Module A extraction accuracy scoring. Ratings are intentionally left as low-confidence placeholders since the summary-of-terms section does not disclose the specific rating per tranche -- a real analyst would pull this from the Ratings section of the full prospectus."
+}

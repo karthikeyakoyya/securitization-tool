@@ -1,0 +1,79 @@
+{
+  "source_document": "benchmark_2024_v7_424b2_excerpt.txt",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1258361/000153949724001104/n4255_x13-424b2.htm",
+  "issuer_trust_name": "Benchmark 2024-V7 Mortgage Trust",
+  "deal_name_series": "Benchmark 2024-V7",
+  "closing_date": "2024-05-30",
+  "payment_frequency": "monthly",
+  "payment_day_of_month": 11,
+  "first_payment_date": null,
+  "servicer_name": "Midland Loan Services, a Division of PNC Bank, National Association",
+  "trustee_name": "Computershare Trust Company, National Association",
+  "collateral_type": "Fixed rate commercial mortgage loans secured by first liens on commercial and multifamily properties",
+  "aggregate_pool_balance_at_cutoff": 821890000.00,
+  "cutoff_date": null,
+  "tranches": [
+    {
+      "class_name": "Class A-1",
+      "seniority_rank": 1,
+      "initial_principal_balance": 1650000,
+      "coupon_type": "fixed",
+      "coupon_rate": 0.0562741,
+      "reference_rate": null,
+      "spread": null,
+      "final_scheduled_payment_date": null,
+      "credit_rating": "not stated in excerpt - LOW CONFIDENCE, needs manual lookup"
+    },
+    {
+      "class_name": "Class A-2",
+      "seniority_rank": 2,
+      "initial_principal_balance": 33000000,
+      "coupon_type": "fixed",
+      "coupon_rate": 0.0577222,
+      "reference_rate": null,
+      "spread": null,
+      "final_scheduled_payment_date": null,
+      "credit_rating": "not stated in excerpt - LOW CONFIDENCE, needs manual lookup"
+    },
+    {
+      "class_name": "Class A-3",
+      "seniority_rank": 3,
+      "initial_principal_balance": 533784000,
+      "coupon_type": "floating",
+      "coupon_rate": 0.0622757,
+      "reference_rate": "pool WAC (capped)",
+      "spread": null,
+      "final_scheduled_payment_date": null,
+      "credit_rating": "not stated in excerpt - LOW CONFIDENCE, needs manual lookup"
+    },
+    {
+      "class_name": "Class A-S",
+      "seniority_rank": 4,
+      "initial_principal_balance": 86280000,
+      "coupon_type": "floating",
+      "coupon_rate": 0.0653304,
+      "reference_rate": "pool WAC (capped)",
+      "spread": null,
+      "final_scheduled_payment_date": null,
+      "credit_rating": "not stated in excerpt - LOW CONFIDENCE, needs manual lookup"
+    },
+    {
+      "class_name": "Class B",
+      "seniority_rank": 5,
+      "initial_principal_balance": 40602000,
+      "coupon_type": "floating",
+      "coupon_rate": 0.0707994,
+      "reference_rate": "pool WAC",
+      "spread": null,
+      "final_scheduled_payment_date": null,
+      "credit_rating": "not stated in excerpt - LOW CONFIDENCE, needs manual lookup"
+    }
+  ],
+  "credit_enhancement": null,
+  "key_covenants_triggers": [
+    "Control Termination Event (subordinate class certificate balance below 25% of initial balance, net of Appraisal Reduction Amounts)",
+    "Collateral Deficiency Amount allocation in reverse order of seniority",
+    "Servicer Termination Event provisions for Master Servicer/Special Servicer replacement"
+  ],
+  "notes_on_manual_verification": "Filled in by hand from the real Benchmark 2024-V7 Mortgage Trust 424B2 prospectus (Certificate Summary and Summary of Terms) and cross-checked against the deal's Pooling and Servicing Agreement (Exhibit 4.1 to Form 8-K/A, filed 2024-05-30) for the Master Servicer/Special Servicer/Trustee names. Ratings are intentionally left as low-confidence placeholders, matching the same convention as the VW ABS ground truth. final_scheduled_payment_date is null for every class because this summary states only one deal-wide rated final distribution date (May 2056, no exact day) rather than a per-class date -- a genuine structural difference from the ABS deal's per-tranche dates. cutoff_date and first_payment_date are null for the same reason: this summary states a cutoff value but not an exact cutoff date, and states 'commencing in June 2024' without a specific day. Class A-3, Class A-S, and Class B are rate-capped at the pool's weighted average coupon (WAC/WAC Cap) rather than truly fixed or indexed-floating -- classified here as 'floating' since the rate varies with the pool, which is the more defensible reading under this project's binary fixed/floating schema, but this is a real schema limitation worth stating plainly: neither label is a clean fit for a WAC-linked rate."
+}

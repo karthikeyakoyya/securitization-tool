@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+*.egg-info/
+
+# SQLite
+*.db
+
+# Generated Excel exports
+backend/sample_data/output/*.xlsx
+!backend/sample_data/output/.gitkeep
+
+# Node / frontend
+node_modules/
+dist/
+.vite/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/

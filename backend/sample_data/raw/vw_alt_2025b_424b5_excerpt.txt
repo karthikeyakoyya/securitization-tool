@@ -1,0 +1,75 @@
+SOURCE: SEC EDGAR, Form 424B5
+Filer: Volkswagen Auto Lease/Loan Underwritten Funding, LLC (CIK 0001182534)
+URL: https://www.sec.gov/Archives/edgar/data/1182534/000141057825002125/tm2524548d14_424b5.htm
+Filed: 2025-09-11
+NOTE: This is a manually-trimmed excerpt (Summary of Terms + Priority of Payments sections)
+of a real, public SEC filing, saved for offline development/testing of the extraction
+pipeline. Full filing should be re-downloaded from the URL above for production use --
+do not redistribute large verbatim excerpts of third-party filings beyond what is needed
+for local testing.
+
+=== SUMMARY OF TERMS ===
+
+Issuing Entity/Trust: Volkswagen Auto Lease Trust 2025-B, a Delaware statutory trust.
+
+Depositor: Volkswagen Auto Lease/Loan Underwritten Funding, LLC, a Delaware limited
+liability company and wholly owned special purpose subsidiary of VW Credit, Inc.
+
+Servicer/Sponsor: VW Credit, Inc. ("VW Credit"), a Delaware corporation.
+
+Trustees:
+- Indenture Trustee: Citibank, N.A.
+- Owner Trustee: Deutsche Bank Trust Company Delaware
+- UTI/SUBI/Administrative Trustee (origination trust): U.S. Bank Trust Company, N.A.
+- Delaware Trustee (origination trust): Wilmington Trust Company
+
+Asset Representations Reviewer: Clayton Fixed Income Services LLC
+
+Closing Date: on or about September 16, 2025
+First Payment Date: October 20, 2025
+Payment Dates: 20th day of each month (or next business day)
+
+Collateral Type: Retail closed-end automobile leases (Volkswagen and Audi vehicles)
+Aggregate securitization value (cutoff date, July 31, 2025): $1,749,271,144.90
+Weighted average original lease term: ~36.72 months
+Weighted average remaining lease term: ~25.42 months
+
+THE OFFERED NOTES:
+
+Class of Notes | Principal Amount | Interest Rate           | Final Scheduled Payment Date
+Class A-1      | $212,600,000     | 4.164% (fixed)           | September 21, 2026
+Class A-2-A    | $305,000,000     | 3.97% (fixed)            | April 20, 2028
+Class A-2-B    | $292,000,000     | SOFR Rate + 0.37% (float)| April 20, 2028
+Class A-3      | $597,000,000     | 4.01% (fixed)            | January 22, 2029
+Class A-4      | $93,400,000      | 4.00% (fixed)            | May 20, 2030
+Total          | $1,500,000,000   |                          |
+
+Note: Class A-2-A and Class A-2-B notes rank pari passu with each other (together "Class A-2").
+
+Credit Enhancement:
+- Reserve account: funded at closing with >= 0.25% of initial aggregate securitization value
+- Overcollateralization: initial amount $249,271,144.90 (14.25% of initial aggregate
+  securitization value)
+
+Principal Payment Priority (sequential pay, prior to an indenture default):
+  1. Class A-1 notes, until paid in full
+  2. Class A-2 notes (pro rata between A-2-A and A-2-B), until paid in full
+  3. Class A-3 notes, until paid in full
+  4. Class A-4 notes, until paid in full
+
+Ratings: Expected from two NRSROs hired by the sponsor (Hired Agencies); specific
+agency names and rating levels not stated in the summary-of-terms excerpt above --
+flag this field as LOW CONFIDENCE / needs manual lookup in the ratings section of the
+full prospectus.
+
+Key Triggers/Covenants (from Priority of Payments, summarized):
+- "First priority principal distribution amount": excess of prior outstanding note
+  balance over current aggregate securitization value of the collateral pool
+  (undercollateralization trigger).
+- "Regular principal distribution amount": ties to maintaining the targeted
+  overcollateralization amount.
+- Reserve account must be maintained at the "targeted reserve account balance";
+  shortfalls are replenished from excess collections before the certificate holder
+  receives any residual distribution.
+
+=== END OF EXCERPT ===
